@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#33b6e5"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:text="Assignment Four"
+        android:background="#aa66cc"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/addButton"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffbb33"
+            android:textStyle="bold"
+            android:text="ADD TEAM"/>
+        <Button
+            android:id="@+id/exitButton"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffbb33"
+            android:textStyle="bold"
+            android:text="EXIT"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/listLL">
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/listLV"
+            android:layout_width="match_parent"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1.5dip" />
+    </LinearLayout>
+</LinearLayout>
